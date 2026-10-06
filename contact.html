@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Get early access | VESKILA</title>
+<meta name="description" content="Join the VESKILA early access list or get in touch.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700;800&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="VESKILA home">
+      <img src="images/logo.png" alt="VESKILA logo" data-fallback="logo">
+      <span class="brand-text">VESKILA</span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-head">
+    <div class="wrap">
+      <h1>Get early access</h1>
+      <p class="lead">Tell us how you would like to be involved and we will reach out as we open up.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:2rem">
+    <div class="wrap contact-grid">
+      <form class="card" id="contact-form" novalidate>
+        <div class="field">
+          <label for="name">Your name</label>
+          <input id="name" name="name" type="text" autocomplete="name" aria-describedby="name-error">
+          <div class="error" id="name-error" role="alert"></div>
+        </div>
+        <div class="field">
+          <label for="email">Email address</label>
+          <input id="email" name="email" type="email" autocomplete="email" aria-describedby="email-error">
+          <div class="error" id="email-error" role="alert"></div>
+        </div>
+        <div class="field">
+          <label for="interest">I want to</label>
+          <select id="interest" name="interest">
+            <option>Learn with VESKILA</option>
+            <option>Teach with VESKILA</option>
+            <option>Partner with VESKILA</option>
+            <option>Ask something else</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" aria-describedby="message-error"></textarea>
+          <div class="error" id="message-error" role="alert"></div>
+        </div>
+        <button class="btn" type="submit">Send message</button>
+        <p class="status" id="form-status" role="status"></p>
+        <p class="form-note">This opens your email app with your message ready to send.</p>
+      </form>
+
+      <div class="aside">
+        <h3>Email</h3>
+        <p><a href="mailto:hello@veskila.com">hello@veskila.com</a></p>
+        <h3>Website</h3>
+        <p>veskila.com</p>
+        <h3>Where we are</h3>
+        <p>Open to learners everywhere.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>&copy; <span id="year">2026</span> VESKILA. All rights reserved.</p>
+    <p><a href="index.html">Home</a><a href="about.html">About</a><a href="contact.html">Contact</a></p>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
